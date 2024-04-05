@@ -4,7 +4,7 @@ pub fn build(b: *std.Build) void {
     const optimize = b.standardOptimizeOption(.{});
     const target = b.standardTargetOptions(.{});
 
-    _ = b.addModule("root", .{
+    _ = b.addModule("znoise", .{
         .root_source_file = .{ .path = "src/znoise.zig" },
     });
 
